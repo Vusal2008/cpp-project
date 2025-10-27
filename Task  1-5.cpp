@@ -5,6 +5,6 @@ int main() {
 	cout << "selsi daxil edin :";
 	cin >> c;
 	f = (c * 9 / 5) + 32;
-	cout << "fahrenheit: " << f << endl;
+	cout << "faranheyt: " << f << endl;
 	return 0;
 }
