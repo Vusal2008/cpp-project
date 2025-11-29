@@ -1,29 +1,20 @@
-# include <iostream>
-# include  <cmath>
+#include <iostream>
 using namespace std;
-//ededin reqemlerinin cemini tapan fuction//
- int reqem(int a){
-	int i;
-	i = 1;
-	int cem =0;
-  while(i!=0){
-  	
-  	i=a%10;
-  	cem=cem+i;
-  	a=a/10;
-  	
-  }
-	
-	cout<<cem;
-	
+
+void reqem(int a)
+{
+    int cem = 0;
+    while (a != 0)
+    {
+        cem += a % 10;
+        a /= 10;
+    }
+    cout << cem;
 }
 
-
-
-int main(){
-	double a;
-	cout<<"ededi daxil edin:";
-	cin>>a;
-	 reqem(a);
-	
+int main()
+{
+    int a;
+    cin >> a;
+    reqem(a);
 }
