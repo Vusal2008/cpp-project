@@ -1,39 +1,26 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-// saniyeni saata ve deqiqeye ceviren function//
-void time( int a){
-	 int minute=a/60;
-	 int second=a%60;
-	 int minute1=minute%60;
-	 if(minute>60)
-	 {
-	 cout<<minute1<<"deqiqe"<<endl;
-	 }
-	 
-	else{
-	 cout<<minute<<"deqiqe"<<endl;}
-	
-	cout<<second<<"saniye"<<endl;
-	}
 
-void time2(int a){
-	int hour=a/3600;
-	if(hour>0)
-	{
-	cout<<hour<<"saat";
-	}
-	else
-	{
-	cout<<hour<<"0"<<"saat";
-	}
+void minute_second(int a)
+{
+    int minute = (a / 60) % 60;
+    int second = a % 60;
+
+    cout << minute << " deqiqe" << endl;
+    cout << second << " saniye" << endl;
 }
 
+void hour_part(int a)
+{
+    int hour = a / 3600;
+    cout << hour << " saat" << endl;
+}
 
 int main()
-{ 
-     int a;
-	cout<<"saniyeni daxil edin:"<<endl;
-	cin>>a;
-	time(a);
-	time2(a);
+{
+    int a;
+    cin >> a;
+
+    hour_part(a);
+    minute_second(a);
 }
