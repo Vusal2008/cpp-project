@@ -1,26 +1,18 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-//Ededin faktoriyalini tapan fuction//
-void factorial(int a)
-{	 
-	 int faktoriyal=1;
-   for(int i=2;i<=a;i++)
-   {
-     	faktoriyal*=i;
-   	
-   }
-   cout<<"ededinFaktoriyali:"<<faktoriyal<<endl;
-   	
+
+void faktor(int n)
+{
+    int f = 1;
+    for(int i = 1; i <= n; i++)
+        f *= i;
+
+    cout << f;
 }
 
-int main(){
-	int a;
-	    cout<<"ededi daxil edin:";
-	    
-		cin>>a;
-		
-	factorial(a);	
-	
-	
-	
+int main()
+{
+    int a;
+    cin >> a;
+    faktor(a);
 }
