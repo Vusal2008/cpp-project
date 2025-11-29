@@ -1,21 +1,29 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-//Verilmis ededin sade olub,olmadigini yoxlayan function//
- void yoxlama(int a){
- int i,m;
- i=2;
- m=0;
- for  (i;i<a/2;i++){if (a%i==0){ m=m+1;}
- } if ( m!=1){  cout << "sade  "<< a ;}
-   else {cout << "sade deyil "<< a;} }
-int main(){
- int a;
- cout<<"ededi daxil edin:";
- cin >> a ;
- yoxlama(a);
-	
-	
-	
-	
-	
+
+void yoxlama(int a)
+{
+    if (a <= 1)
+    {
+        cout << "sade deyil " << a;
+        return;
+    }
+
+    for (int i = 2; i < a; i++)
+    {
+        if (a % i == 0)
+        {
+            cout << "sade deyil " << a;
+            return;
+        }
+    }
+
+    cout << "sade " << a;
+}
+
+int main()
+{
+    int a;
+    cin >> a;
+    yoxlama(a);
 }
