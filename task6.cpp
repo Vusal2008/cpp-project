@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void findMax(int a, int b, int c)
+void findmax(int a, int b, int c)
 {
     if (a >= b && a >= c)
         cout << a;
@@ -16,5 +16,7 @@ int main()
     int a, b, c;
     cin >> a >> b >> c;
 
-    findMax(a, b, c);
+    findmax(a, b, c);
+    return 0;
 }
+
