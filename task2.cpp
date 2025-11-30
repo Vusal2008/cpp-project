@@ -17,4 +17,6 @@ int main()
     int a;
     cin >> a;
     reqem(a);
+    return 0;
 }
+
