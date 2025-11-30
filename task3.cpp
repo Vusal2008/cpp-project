@@ -16,4 +16,6 @@ int main()
     int a, b;
     cin >> a >> b;
     comparison(a, b);
+    return 0;
 }
+
