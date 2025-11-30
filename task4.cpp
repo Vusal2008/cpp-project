@@ -23,4 +23,5 @@ int main()
 
     hour_part(a);
     minute_second(a);
+    return 0;
 }
