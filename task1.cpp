@@ -15,6 +15,7 @@ int main()
     int a;
     cin >> a;
     faktor(a);
-    
+    return 0;
 }
+
 
