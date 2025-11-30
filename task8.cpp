@@ -26,4 +26,6 @@ int main()
     int a;
     cin >> a;
     yoxlama(a);
+    return 0;
 }
+
