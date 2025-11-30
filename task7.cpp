@@ -15,4 +15,7 @@ int main()
     int a;
     cin >> a;
     bolenler(a);
+
+    return 0;
 }
+
