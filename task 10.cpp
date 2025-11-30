@@ -16,4 +16,6 @@ int main()
     int a;
     cin >> a;
     Eded(a);
+    return 0;
 }
+
